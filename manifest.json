@@ -9,9 +9,7 @@
       "48": "Bongo_Cat_Redraw.png",
       "128": "Bongo_Cat_Redraw.png"
     },
-    "background": {
-      "service_worker": "background.js"
-    },
+
     "action": {
       "default_icon": {
         "16": "Bongo_Cat_Redraw.png",
