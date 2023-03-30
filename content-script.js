@@ -43,6 +43,7 @@ body.appendChild(bongo);
 // I need to figure out how to access and change cursor in content-script file
 // figured it out. put in css file with url routed to chrome extension link of corgi cursor
 
-
+// what to do next: implement counter to add additional cats
+// get slider to change the intensity of dark
 
 
