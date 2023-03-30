@@ -22,7 +22,30 @@ for (const el of elements) {
 }
 
 
-// add random bongo cat to page
-// const bongo = document.createElement('img');
-// bongo.setAttribute('src', 'image/Bongo_Cat_Redraw.png');
-// document.body.appendChild(bongo);
+// add slider to control hslColor
+
+const slider = document.create
+
+//add random bongo cat to page
+
+const bongoimageUrl = chrome.runtime.getURL('image/Bongo_Cat_Redraw.png');
+const bongo = document.createElement('img');
+bongo.setAttribute('src', bongoimageUrl)
+// sets bongo in a random position
+bongo.style.position = 'absolute';
+bongo.style.left = Math.floor(Math.random() * (window.innerWidth - bongo.width)) + 'px';
+bongo.style.top = Math.floor(Math.random() * (window.innerHeight - bongo.height)) + 'px';
+
+//append bongo to body
+body.appendChild(bongo);
+
+// adding dog as our cursor
+const doggoImageURL = chrome.runtime.getURL('image/mini_corgi_cursor.png');
+console.log(doggoImageURL);
+
+// I need to figure out how to access and change cursor in content-script file
+
+
+
+
+

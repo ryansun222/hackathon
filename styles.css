@@ -1,0 +1,23 @@
+
+h1 {
+    font-size: 14px;
+}
+
+.logo {
+    width: 200px;
+    height: 120px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
