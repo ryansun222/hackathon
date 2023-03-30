@@ -3,19 +3,22 @@
     "name": "Cozy Browsing",
     "description": "Make browsing more cozy and cat-friendly",
     "version": "1.0",
+    "browser_action": {
+        "default_popup": "index.html"
+      },
     "icons": {
-      "16": "Bongo_Cat_Redraw.png",
-      "32": "Bongo_Cat_Redraw.png",
-      "48": "Bongo_Cat_Redraw.png",
-      "128": "Bongo_Cat_Redraw.png"
+      "16": "image/Bongo_Cat_Redraw.png",
+      "32": "image/Bongo_Cat_Redraw.png",
+      "48": "image/Bongo_Cat_Redraw.png",
+      "128": "image/Bongo_Cat_Redraw.png"
     },
 
     "action": {
       "default_icon": {
-        "16": "Bongo_Cat_Redraw.png",
-        "32": "Bongo_Cat_Redraw.png",
-        "48": "Bongo_Cat_Redraw.png",
-        "128": "Bongo_Cat_Redraw.png"
+        "16": "image/Bongo_Cat_Redraw.png",
+        "32": "image/Bongo_Cat_Redraw.png",
+        "48": "image/Bongo_Cat_Redraw.png",
+        "128": "image/Bongo_Cat_Redraw.png"
       }
     },
     "commands": {
@@ -32,7 +35,7 @@
         {
           "matches": ["<all_urls>"],
           "css": ["styles.css"],
-          "js": ["content-script.js"]
+          "js": ["tinycolor.js", "content-script.js", "index.js"]
         }
       ]
   }
