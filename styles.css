@@ -3,6 +3,9 @@ h1 {
     font-size: 14px;
 }
 
+body {
+    cursor: url('chrome-extension://hbjfonmollehhofekeefoihbbfeoajgc/image/mini_corgi_cursor.png'), default;
+}
 .logo {
     width: 200px;
     height: 120px;

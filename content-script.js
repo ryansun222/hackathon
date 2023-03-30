@@ -39,12 +39,9 @@ bongo.style.top = Math.floor(Math.random() * (window.innerHeight - bongo.height)
 //append bongo to body
 body.appendChild(bongo);
 
-// adding dog as our cursor
-const doggoImageURL = chrome.runtime.getURL('image/mini_corgi_cursor.png');
-console.log(doggoImageURL);
 
 // I need to figure out how to access and change cursor in content-script file
-
+// figured it out. put in css file with url routed to chrome extension link of corgi cursor
 
 
 
