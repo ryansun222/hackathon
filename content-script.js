@@ -4,27 +4,30 @@ const elements = document.querySelectorAll('*');
 const body = document.querySelector('body');
 //// content-script.js ////
 
-for (const el of elements) {
-    // get the converted color number
-    const color = getComputedStyle(el).color;
-    
-    //convert color to HSL
-    const hslColor = tinycolor(color).toHsl();
+// pull slider functionality from popup.js
 
-    //adjust brightness of color
-    hslColor.l += 0.5;
+chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
+    if (request.brightness) {
+        for (const el of elements) {
+            // get the converted color number
+            const color = getComputedStyle(el).color;
+            
+            //convert color to HSL
+            const hslColor = tinycolor(color).toHsl();
+            
+            //adjust brightness of color
+            hslColor.l += request.brightness;
 
-    //convert hsl color back to css
-    const newColor = tinycolor(hslColor).toHexString();
+            //convert hsl color back to css
+            const newColor = tinycolor(hslColor).toHexString();
 
-    //reapply new color
-    el.style.color = newColor;
-}
+            //reapply new color
+            el.style.color = newColor;
+        }
+        sendResponse('color updated');
+    }
+});
 
-
-// add slider to control hslColor
-
-const slider = document.create
 
 //add random bongo cat to page
 
